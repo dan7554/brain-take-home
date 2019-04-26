@@ -28,7 +28,7 @@ class Root extends Component {
         return (
             <div className={`root ${breakpoint}`}>
                 <header className="site-header">
-                    <h1>Boilerplate</h1>
+                    <h1>Tic Tac Toe</h1>
                 </header>
                 <div className='root__content'>
                     <Router history={this.props.history}>
