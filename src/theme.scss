@@ -1,0 +1,41 @@
+$white: #ffffff;
+$grey-e: #eeeeee;
+$grey-f: #dddddd;
+$grey-c: #cccccc;
+$grey-b: #bbbbbb;
+$grey-a: #aaaaaa;
+$grey-9: #999999;
+$grey-8: #888888;
+$grey-7: #777777;
+$grey-6: #666666;
+$grey-5: #555555;
+$grey-4: #444444;
+$grey-3: #333333;
+$grey-2: #222222;
+$grey-1: #111111;
+$black: #000000;
+
+$validation-error: rgb(200, 0, 0);
+
+$colorOne: #d8caa8;
+$colorTwo: #5c832f;
+$colorThree: #284907;
+$colorFour: #382513;
+$colorFive: #363942;
+
+$maxPageWidth: 1312px;
+
+body {
+	margin: 0;
+    overflow-y: scroll;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+#reactRoot {
+	height: 100%;
+}
+

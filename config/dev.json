@@ -1,0 +1,16 @@
+{
+    "env": "dev",
+    "devbar": {
+        "enabled": true,
+        "defaultBreakpoint": "md"
+    },
+    "breakpoints" : {
+        "xxs": {"min": 0,      "max": 320  },
+        "xs":  {"min": 321,     "max": 480  },
+        "sm":  {"min": 481,     "max": 768  },
+        "md":  {"min": 769,     "max": 992  },
+        "lg":  {"min": 993,     "max": 1200 },
+        "xl":  {"min": 1201,    "max": 2047 },
+        "xxl": {"min": 2048,    "max": 999999 }
+    }
+}

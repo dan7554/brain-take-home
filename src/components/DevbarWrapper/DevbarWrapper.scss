@@ -1,0 +1,37 @@
+.devbar-wrapper {
+    float: left;
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    overflow-y: hidden;
+    height: 100%;
+
+    .current-breakpoint {
+        font-size: 25px;
+        margin: 7px;
+        display: inline-block;
+        font-weight: 700;
+    }
+
+    .breakpoints {
+        height: 40px;
+        position: relative;
+        overflow-x: hidden;
+    
+        button {
+            height: 40px;
+            text-transform: uppercase;
+            cursor: pointer;
+            display: inline-block;
+            position: absolute;
+        }
+    }
+    .dev-frame {
+        border: solid 1px grey;
+        height: 100%;
+    }
+    .frame {
+        position: absolute;
+        height: calc(100% - 86px);
+    }
+}
