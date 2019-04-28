@@ -29,6 +29,7 @@ a {
 	padding: 10px;
 	text-align: center;
 	border-bottom: solid 1px black;
+	height: 70px;
 	h1 {
 		margin: 0;
 	}
@@ -38,7 +39,8 @@ a {
 	color: var(--color);
 	font-family: var(--font-serif);
 	text-align: center;
-	padding: 20px 0;
+    padding: 10px;
+	height: 50px;
 	p {
 		margin: 0;
 		line-height: 30px;
