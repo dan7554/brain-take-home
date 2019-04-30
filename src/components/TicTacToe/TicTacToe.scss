@@ -1,10 +1,17 @@
 .tic-tac-toe {
     height: 100%;
     position: relative;
-
+	.tic-tac-toe__mode {
+		height: 100%;
+		left: 0;
+		position: absolute;
+		width: 100%;
+        transition: transform 600ms;
+        border-right: solid 3px black;
+	}
 	.tic-tac-toe__pick {
 		height: 100%;
-		left: 0px;
+		left: 100%;
 		position: absolute;
 		width: 100%;
         transition: transform 600ms;
@@ -12,11 +19,69 @@
 	}
 	.tic-tac-toe__game {
 		height: 100%;
-		left: 100%;
+		left: 200%;
 		position: absolute;
 		width: 100%;
         transition: transform 600ms;
 	}
+}
+
+.mode {
+	height: 100%;
+
+	.mode__title {
+		width: 100%;
+		text-align: center;
+		padding: 20px;
+		font-size: 20px;
+	}
+	.mode__container {
+        margin: auto;
+        width: 320px;
+        position: absolute;
+        top: calc(50% - 70px);
+        left: 50%;
+        transform: translate(-50%, -50%);
+	}
+	.mode__button {
+		width: 145px;
+		height: 30px;
+		border: solid 2px black;
+		margin: auto;
+		position: relative;
+		cursor: pointer;
+		border-radius: 5px;
+		text-align: center;
+		margin-bottom: 20px;
+
+		&:hover {
+			background-color: lightblue;
+		}
+		&.selected {
+			background-color: lightblue;
+		}
+	}
+	.mode__next-container {
+		text-align: center;
+		padding: 20px;
+		font-size: 24px;
+		font-weight: 700;
+		width: 100%;
+		margin: auto;
+		cursor: pointer;
+		bottom: 15%;
+		position: absolute;
+
+		.mode__next {
+			width: 100px;
+			margin: auto;
+
+			&:hover {
+				color: green;
+			}
+		}
+	}
+
 }
 
 .pick-pieces {
@@ -40,6 +105,11 @@
 			display: inline-block;
 			margin: 0px 3px;
 			padding: 3px 0px;
+
+			.pick-pieces__player {
+				text-align: center;
+				font-size: 20px;			
+			}
 
 			img,
 			.x-svg,
@@ -118,4 +188,62 @@
 			}
 		}
 	}
+}
+
+.game {
+    position: relative;
+	height: 100%;
+
+    .game__board {
+        height: 300px;
+        width: 300px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+
+        .game__board-spot {
+            width: 33%;
+            height: 33%;
+            display: inline-block;
+			border: solid 1px black;
+			position: relative;
+			
+			img {
+				padding: 2px;
+				height: 100%;
+				width: 100%;
+				object-fit: cover;
+				position: absolute;
+			}
+            &.tl {
+                border-top: none;
+                border-left: none;
+            }
+            &.tm {
+                border-top: none;
+            }
+            &.tr {
+                border-top: none;
+                border-right: none;
+            }
+            &.ml {
+                border-left: none;
+            }
+            &.mr {
+                border-right: none;
+            }
+            &.bl {
+                border-bottom: none;
+                border-left: none;
+            }
+            &.bm {
+                border-bottom: none;
+            }
+            &.br {
+                border-bottom: none;
+                border-right: none;
+            }
+        }
+    }
 }
